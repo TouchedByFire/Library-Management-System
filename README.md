@@ -1,105 +1,108 @@
-Library Management System - README
+# Library Management System - README
 
 This is a simple Flask-based Library Management System. It allows users to add books, search for books, borrow and return books, and view overdue books.
-Getting Started
+
+## Getting Started
 
 To run this application locally, follow these steps:
-Prerequisites
 
-Make sure you have Python installed on your system. You can download it from Python's official website.
-Installation
+### Prerequisites
 
-    Clone the repository to your local machine.
+Make sure you have Python installed on your system. You can download it from [Python's official website](https://www.python.org/downloads/).
 
-    bash
+### Installation
 
-git clone https://github.com/your-username/library-management-system.git
+1. Clone the repository to your local machine.
 
-Navigate to the project directory.
+   ```bash
+   git clone https://github.com/your-username/library-management-system.git
+   ```
 
-bash
+2. Navigate to the project directory.
 
-cd library-management-system
+   ```bash
+   cd library-management-system
+   ```
 
-Create a virtual environment to isolate dependencies.
+3. Create a virtual environment to isolate dependencies.
 
-bash
+   ```bash
+   python -m venv venv
+   ```
 
-python -m venv venv
+4. Activate the virtual environment.
 
-Activate the virtual environment.
+   - On Windows:
 
-    On Windows:
+     ```bash
+     .\venv\Scripts\activate
+     ```
 
-    bash
+   - On macOS/Linux:
 
-.\venv\Scripts\activate
+     ```bash
+     source venv/bin/activate
+     ```
 
-On macOS/Linux:
+5. Install the required dependencies.
 
-bash
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-    source venv/bin/activate
+### Running the Application
 
-Install the required dependencies.
+1. Ensure you are in the project directory and the virtual environment is activated.
 
-bash
+2. Run the Flask application.
 
-    pip install -r requirements.txt
+   ```bash
+   python app.py
+   ```
 
-Running the Application
+3. Open your web browser and go to [http://localhost:8000](http://localhost:8000).
 
-    Ensure you are in the project directory and the virtual environment is activated.
+## Usage
 
-    Run the Flask application.
+1. Access the home page to view all available books.
 
-    bash
+2. Use the "Add Book" page to add new books to the library.
 
-    python app.py
+3. Use the "Search Books" page to search for books by title, author, or publication year.
 
-    Open your web browser and go to http://localhost:8000.
+4. Borrow and return books using the respective endpoints.
 
-Usage
+5. View overdue books on the "Overdue Books" page.
 
-    Access the home page to view all available books.
+## Endpoints
 
-    Use the "Add Book" page to add new books to the library.
+- Home Page: [http://localhost:8000/](http://localhost:8000/)
+- Add Book Form: [http://localhost:8000/add_book_form](http://localhost:8000/add_book_form)
+- Search Books: [http://localhost:8000/search_books?query={your_query}](http://localhost:8000/search_books?query={your_query})
+- Borrow Book: [http://localhost:8000/borrow_book](http://localhost:8000/borrow_book)
+- Return Book: [http://localhost:8000/return_book](http://localhost:8000/return_book)
+- Overdue Books: [http://localhost:8000/overdue_books](http://localhost:8000/overdue_books)
 
-    Use the "Search Books" page to search for books by title, author, or publication year.
-
-    Borrow and return books using the respective endpoints.
-
-    View overdue books on the "Overdue Books" page.
-
-Endpoints
-
-    Home Page: http://localhost:8000/
-    Add Book Form: http://localhost:8000/add_book_form
-    Search Books: http://localhost:8000/search_books?query={your_query}
-    Borrow Book: http://localhost:8000/borrow_book
-    Return Book: http://localhost:8000/return_book
-    Overdue Books: http://localhost:8000/overdue_books
-
-Testing
+## Testing
 
 This application includes a set of pytest tests. Run the tests with the following command:
 
-bash
-
+```bash
 pytest
+```
 
-Contributing
+## Contributing
 
 If you'd like to contribute to this project, please follow the standard GitHub workflow:
 
-    Fork the repository.
-    Create a new branch for your feature or bug fix.
-    Commit your changes.
-    Push the branch to your fork.
-    Open a pull request.
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes.
+4. Push the branch to your fork.
+5. Open a pull request.
 
-License
+## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 Feel free to customize and enhance the application based on your needs!
